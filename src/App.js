@@ -25,20 +25,20 @@ export default class App extends React.Component {
     this.getData()
       .then(res =>
         this.setState({
-          flex: res.data[0].tier,
-          solo: res.data[1].tier,
-          flexNo: res.data[0].rank,
-          soloNo: res.data[1].rank,
-          flexWins: res.data[0].wins,
-          flexLoses: res.data[0].losses,
-          flexLP: res.data[0].leaguePoints,
-          soloWins: res.data[1].wins,
-          soloLoses: res.data[1].losses,
-          soloLP: res.data[1].leaguePoints
+          flex: res.data[1].tier,
+          solo: res.data[0].tier,
+          flexNo: res.data[1].rank,
+          soloNo: res.data[0].rank,
+          flexWins: res.data[1].wins,
+          flexLoses: res.data[1].losses,
+          flexLP: res.data[1].leaguePoints,
+          soloWins: res.data[0].wins,
+          soloLoses: res.data[0].losses,
+          soloLP: res.data[0].leaguePoints
         })
       )
       .catch(err => console.log(err));
-  }
+  };
 
   getData = async () => {
     const response = await fetch("/api/seniorull");
@@ -47,7 +47,6 @@ export default class App extends React.Component {
     if (response.status !== 200) {
       throw Error(body.message);
     }
-
     return body;
   };
 
@@ -60,7 +59,9 @@ export default class App extends React.Component {
             <img src={iron} className="App-logo" alt="iron" />
             <img src={theman} className="App-logo calin" alt="calin" />
           </div>
-          <button className="btn btn-primary btn-lg" onClick={this.updateStats}>Refresh Stats</button>
+          <button className="btn btn-primary btn-lg" onClick={this.updateStats}>
+            Refresh Stats
+          </button>
           <br />
           <h3>Ranked Solo/Duo</h3>
           <p>
