@@ -1,6 +1,6 @@
 {
   "name": "seniorull-stats",
-  "version": "0.1.0",
+  "version": "0.1.9",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
@@ -32,5 +32,8 @@
       "last 1 safari version"
     ]
   },
+  "author": "Alex Ghiurau",
+  "license": "MIT",
+  "repository": "https://github.com/alexghiurau/seniorull-stats",
   "proxy": "http://localhost:8080"
 }
