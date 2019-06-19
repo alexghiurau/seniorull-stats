@@ -25,16 +25,16 @@ export default class App extends React.Component {
     this.getData()
       .then(res =>
         this.setState({
-          flex: res.data[1].tier,
-          solo: res.data[0].tier,
-          flexNo: res.data[1].rank,
-          soloNo: res.data[0].rank,
-          flexWins: res.data[1].wins,
-          flexLoses: res.data[1].losses,
-          flexLP: res.data[1].leaguePoints,
-          soloWins: res.data[0].wins,
-          soloLoses: res.data[0].losses,
-          soloLP: res.data[0].leaguePoints
+          flex: res[0].tier,
+          solo: res[1].tier,
+          flexNo: res[0].rank,
+          soloNo: res[1].rank,
+          flexWins: res[0].wins,
+          flexLoses: res[0].losses,
+          flexLP: res[0].leaguePoints,
+          soloWins: res[1].wins,
+          soloLoses: res[1].losses,
+          soloLP: res[1].leaguePoints
         })
       )
       .catch(err => console.log(err));
