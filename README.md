@@ -1,3 +1,5 @@
+[![GitHub issues](https://img.shields.io/github/issues/alexghiurau/seniorull-stats.svg)](https://github.com/alexghiurau/seniorull-stats/issues) [![Website https://seniorull-gcloud.appspot.com/](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://seniorull-gcloud.appspot.com/) 
+
 # Seniorul-Stats
 
 Web app showing League of Legends stats of the legend itself.
