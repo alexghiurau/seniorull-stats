@@ -9,10 +9,7 @@
   animation: App-logo-spin infinite 30s linear;
   height: 38vmin;
   pointer-events: none;
-  margin-bottom: 4rem;
-  margin-top: 4rem;
-  margin-right: 2em;
-  margin-left: 2em;
+  margin: 4rem 2rem 4rem 2rem;
 }
 
 .App-header {

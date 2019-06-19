@@ -5,10 +5,10 @@ import iron from "./iron.png";
 
 export default class App extends React.Component {
   state = {
-    flex: "N/A",
-    solo: "N/A",
-    flexNo: "N/A",
-    soloNo: "N/A",
+    flex: "-",
+    solo: "-",
+    flexNo: "-",
+    soloNo: "-",
     flexWins: 0,
     flexLoses: 0,
     flexLP: 0,
@@ -59,7 +59,10 @@ export default class App extends React.Component {
             <img src={iron} className="App-logo" alt="iron" />
             <img src={theman} className="App-logo calin" alt="calin" />
           </div>
-          <button className="btn btn-primary btn-lg" onClick={this.updateStats}>
+          <button
+            className="btn btn-primary btn-lg refresh"
+            onClick={this.updateStats}
+          >
             Refresh Stats
           </button>
           <br />
@@ -108,7 +111,7 @@ export default class App extends React.Component {
           <br />
           <p className="subTitle">
             App created with <span role="img">❤️</span> by Alex using Riot Games
-            API and React. &copy; 2019
+            API and React. &copy; {new Date().getFullYear()}
           </p>
         </header>
       </div>
