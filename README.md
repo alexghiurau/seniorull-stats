@@ -2,7 +2,7 @@
 
 # Seniorul-Stats
 
-Web app showing League of Legends stats of the legend.
+Web app showing League of Legends stats of [Seniorul](https://www.youtube.com/user/SeniorCalin).
 
 Built using [React](https://reactjs.org/), [Node.js](https://nodejs.org/en/) and [Riot Games API](https://developer.riotgames.com/).
 
