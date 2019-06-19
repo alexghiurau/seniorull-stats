@@ -7,4 +7,5 @@ Built using [React](https://reactjs.org/), [Node.js](https://nodejs.org/en/) and
 [Link to app](https://seniorull-gcloud.appspot.com/)
 
 ### API Key
+
 If you cloned the project and wish to work on it, just rename the .env_sample file to .env and put your API key there.
