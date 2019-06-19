@@ -5,10 +5,10 @@ import iron from "./iron.png";
 
 export default class App extends React.Component {
   state = {
-    flex: "",
-    solo: "",
-    flexNo: "",
-    soloNo: "",
+    flex: "N/A",
+    solo: "N/A",
+    flexNo: "N/A",
+    soloNo: "N/A",
     flexWins: 0,
     flexLoses: 0,
     flexLP: 0,
