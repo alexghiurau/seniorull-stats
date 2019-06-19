@@ -34,6 +34,6 @@
   },
   "author": "Alex Ghiurau",
   "license": "MIT",
-  "repository": "https://github.com/alexghiurau/seniorull-stats",
+  "repository": "github:seniorull-stats/master",
   "proxy": "http://localhost:8080"
 }
