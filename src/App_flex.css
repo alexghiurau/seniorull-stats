@@ -8,7 +8,7 @@
  }
  .main {
    display: flex;
-   min-height: calc(100vh - 16vh);
+   min-height: calc(100vh - 10vh);
  }
  .main > article {
    flex: 1;
@@ -17,23 +17,18 @@
    align-items: center;
    justify-content: center;
    color: white;
-   font-size: calc(2px + 2vmin);
+   font-size: calc(4px + 2vmin);
  }
- .main > nav, 
- .main > aside {
-   flex: 0 0 15vw;
-   background-color: #1b1e22;
- }
- .main > nav {
-   order: -1;
- }
- header, footer, article, nav, aside {
+ header, footer, article {
    padding: 1em;
  }
  header, footer {
    background-color: #282c34;
-   height: 8vh;
+   height: 5vh;
    text-align: center;
+ }
+ footer {
+  font-size: calc(8px + 1vmin);
  }
  .navList {
    padding: 0;
@@ -43,9 +38,6 @@
    text-decoration: none;
    font-size: calc(2px + 2vmin);
    padding: .5rem;
- }
- .footerText {
-   margin: .5rem 0 0 0;
  }
  .App-logo {
   animation: App-logo-spin infinite 30s linear;

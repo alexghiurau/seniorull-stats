@@ -110,8 +110,7 @@ export default class App extends React.Component {
           </p>
           <br />
           <p className="subTitle">
-            App created with <span role="img">❤️</span> by Alex using Riot Games
-            API and React. &copy; {new Date().getFullYear()}
+          App created with <span role="img" aria-label="love">❤️</span> by Alex using React, Node.js and Riot Games API. &copy; {new Date().getFullYear()}
           </p>
         </header>
       </div>

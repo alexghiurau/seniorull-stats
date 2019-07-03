@@ -55,24 +55,19 @@ export default class App extends React.Component {
       <div className="body">
         <header className="App-header"><h2>Seniorull Stats</h2></header>
         <div className="main">
-          <nav>
-            <ul className="navList">
-              <li>Home</li>
-              <li>About</li>
-            </ul>
-          </nav>
           <article>
             <div className="imageContainer">
               <img src={iron} className="App-logo" alt="iron" />
               <img src={theman} className="App-logo calin" alt="calin" />
             </div>
             <button
-              className="btn btn-primary btn-lg refresh"
+              className="btn btn-primary btn-md refresh"
               onClick={this.updateStats}
             >
               Refresh Stats
             </button>
-            <br />
+            <br/>
+            <br/>
             <h3>Ranked Solo/Duo</h3>
             <p>
               <span style={{ backgroundColor: "#FFD700", color: "black" }}>
@@ -117,13 +112,9 @@ export default class App extends React.Component {
             </p>
             <br />
           </article>
-          <aside>Aside</aside>
         </div>
         <footer>
-          <p className="footerText">
-            App created with <span role="img">❤️</span> by Alex using Riot Games
-            API and React. &copy; {new Date().getFullYear()}
-          </p>
+            App created with <span role="img" aria-label="love">❤️</span> by Alex using React, Node.js and Riot Games API. &copy; {new Date().getFullYear()}
         </footer>
       </div>
     );
