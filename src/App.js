@@ -89,7 +89,7 @@ export default class App extends React.Component {
           </p>
           <h3>Ranked Flex</h3>
           <p>
-            <span style={{ backgroundColor: "#cd7f32", color: "black" }}>
+            <span style={{ backgroundColor: "#bfbfbf", color: "black" }}>
               {this.state.flex} {this.state.flexNo} {this.state.flexLP} LP
             </span>{" "}
             at Flex and has{" "}

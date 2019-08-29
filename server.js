@@ -25,12 +25,12 @@ app.use(
 
 app.get("/api/seniorull", getSeniorulData);
 
-const port = 8080;
+const PORT = 8080;
 
-app.listen(port, err => {
+app.listen(PORT, err => {
   err
     ? console.log("There was an error starting the server.", err)
-    : console.log(`Server running on port ${port}.`);
+    : console.log(`Server running on port ${PORT}.`);
 });
 
 // SERVER FUNCTIONS
@@ -42,7 +42,7 @@ async function getSeniorulData(req, res) {
     await fetch(
       `https://${
         regions[1]
-      }.api.riotgames.com/lol/league/v4/entries/by-summoner/aCmHaNGEpFDYaTFvUPrtUpdqhIS1dB4OrDqopMkC1ij17Zo?api_key=${api_key}`
+      }.api.riotgames.com/lol/league/v4/entries/by-summoner/gOIXNpZ7P_NOl2BR5iqvD9zMFm0ZMI0xO3D0Ht14g8x2E8I?api_key=${api_key}`
     )
       .then(res => res.json())
       .then(data =>
